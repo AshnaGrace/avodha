@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>hloo {{name}}</h1>
+<form action="add"method="post">
+    {% csrf_token %}
+    n1<input type="text"name="num1"><br>
+    n2<input type="text"name="num2"><br>
+    <input type="submit"name="sub">
+</form>
+{% endblock %}
